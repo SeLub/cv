@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects.
+# Serves the same CV site under lubimoff.com/cv/ (rewrite, not redirect),
+# while lubimoff.com/ keeps serving it from the root.
+# See DEPLOY-DOMAIN.md.
+/cv/* /:splat 200
+/cv /index.html 200
